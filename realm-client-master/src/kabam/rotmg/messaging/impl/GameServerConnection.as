@@ -1411,7 +1411,7 @@ import kabam.rotmg.ui.view.NotEnoughGoldDialog;
                this.addSpeechBalloon.dispatch(speechBalloonvo);
             }
          }
-         this.addTextLine.dispatch(new AddTextLineVO(text.name_,textString,text.objectId_,text.numStars_,text.recipient_));
+         this.addTextLine.dispatch(new AddTextLineVO(text.name_,textString,text.objectId_,text.numStars_,text.recipient_, text.guild_));
       }
       
       private function onInvResult(invResult:InvResult) : void

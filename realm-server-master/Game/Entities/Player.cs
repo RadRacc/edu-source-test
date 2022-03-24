@@ -312,7 +312,7 @@ namespace RotMG.Game.Entities
             var death = GameServer.Death(Client.Account.Id, Client.Character.Id, killer);
             Client.Send(death);
 
-            var text = GameServer.Text("", 0, -1, 0, "", $"{Name} died at level {Level} killed by {killer}!");
+            var text = GameServer.Text("", 0, -1, 0, "", $"{Name} died at level {Level} killed by {killer}!", "");
             var sound = GameServer.PlaySound("quack");
 
             foreach (var p in Parent.Players.Values)

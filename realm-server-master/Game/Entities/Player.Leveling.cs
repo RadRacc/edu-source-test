@@ -88,7 +88,7 @@ namespace RotMG.Game.Entities
 
                 if (Level == 20)
                 {
-                    var text = GameServer.Text("", 0, -1, 0, "", $"{Name} achieved level 20");
+                    var text = GameServer.Text("", 0, -1, 0, "", $"{Name} achieved level 20", "");
                     foreach (var player in Parent.Players.Values)
                         player.Client.Send(text);
                 }

@@ -31,10 +31,10 @@ namespace RotMG.Game.Entities
             "setpiece", "max", "tq", "god", "eff", "effect", "ban", "unban", "mute", "unmute"
         };
 
-        public void SendInfo(string text) => Client.Send(GameServer.Text("", 0, -1, 0, "", text));
-        public void SendError(string text) => Client.Send(GameServer.Text("*Error*", 0, -1, 0, "", text));
-        public void SendHelp(string text) => Client.Send(GameServer.Text("*Help*", 0, -1, 0, "", text));
-        public void SendClientText(string text) => Client.Send(GameServer.Text("*Client*", 0, -1, 0, "", text));
+        public void SendInfo(string text) => Client.Send(GameServer.Text("", 0, -1, 0, "", text, ""));
+        public void SendError(string text) => Client.Send(GameServer.Text("*Error*", 0, -1, 0, "", text, ""));
+        public void SendHelp(string text) => Client.Send(GameServer.Text("*Help*", 0, -1, 0, "", text, ""));
+        public void SendClientText(string text) => Client.Send(GameServer.Text("*Client*", 0, -1, 0, "", text, ""));
 
         private bool PassFilter(string text)
         {
@@ -226,7 +226,7 @@ namespace RotMG.Game.Entities
                                 SendError("Usage: /announce <message>");
                                 return;
                             }
-                            var announce = GameServer.Text("", 0, -1, 0, "", "<ANNOUNCEMENT> " + input);
+                            var announce = GameServer.Text("", 0, -1, 0, "", "<ANNOUNCEMENT> " + input, "");
                             foreach (var client in Manager.Clients.Values)
                                 client.Send(announce);
                         }
@@ -238,7 +238,7 @@ namespace RotMG.Game.Entities
                             SendError("Not in a guild");
                             return;
                         }
-                        var guild = GameServer.Text(Name, Id, NumStars, 5, "*Guild*", input);
+                        var guild = GameServer.Text(Name, Id, NumStars, 5, "*Guild*", input, "");
                         
                         foreach (var client in Manager.Clients.Values)
                         {
@@ -258,7 +258,7 @@ namespace RotMG.Game.Entities
                         }
 
                         var message = string.Join(' ', j, 1, j.Length - 1);
-                        var tell = GameServer.Text(Name, Id, NumStars, 5, recipient.Name, message);
+                        var tell = GameServer.Text(Name, Id, NumStars, 5, recipient.Name, message, string.IsNullOrEmpty(Client.Account.GuildName) ? "" : Client.Account.GuildName);
                         recipient.Client.Send(tell);
                         Client.Send(tell);
                         break;
@@ -657,7 +657,8 @@ namespace RotMG.Game.Entities
             }
 
             var name = Client.Account.Ranked ? "@" + Name : Name;
-            var packet = GameServer.Text(name, Id, NumStars, 5, "", validText);
+            var guildName = string.IsNullOrEmpty(Client.Account.GuildName) ? "" : Client.Account.GuildName;
+            var packet = GameServer.Text(name, Id, NumStars, 5, "", validText, guildName);
 
             foreach (var player in Parent.Players.Values)
                 if (!player.Client.Account.IgnoredIds.Contains(AccountId))

@@ -73,7 +73,7 @@ import robotlegs.bender.bundles.mvcs.Mediator;
       {
          if(this.account.isRegistered() || this.chatFilter.guestChatFilter(vo.name))
          {
-            this.view.addTextFull(vo.name,vo.objectId,vo.numStars,vo.recipient,vo.text);
+            this.view.addTextFull(vo.guild, vo.name,vo.objectId,vo.numStars,vo.recipient,vo.text);
          }
       }
       

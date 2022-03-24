@@ -2,8 +2,10 @@ package kabam.rotmg.game.model
 {
    public class AddTextLineVO
    {
-       
-      
+
+
+      public var guild:String;
+
       public var name:String;
       
       public var objectId:int;
@@ -14,9 +16,10 @@ package kabam.rotmg.game.model
       
       public var text:String;
       
-      public function AddTextLineVO(name:String, text:String, objectId:int = -1, numStars:int = -1, recipient:String = "")
+      public function AddTextLineVO(name:String, text:String, objectId:int = -1, numStars:int = -1, recipient:String = "", guild:String = "")
       {
          super();
+         this.guild = guild;
          this.name = name;
          this.objectId = objectId;
          this.numStars = numStars;

@@ -17,6 +17,8 @@ package kabam.rotmg.messaging.impl.incoming
       public var recipient_:String;
       
       public var text_:String;
+
+      public var guild_:String;
       
       public function Text(id:uint, callback:Function)
       {
@@ -33,11 +35,12 @@ package kabam.rotmg.messaging.impl.incoming
          this.bubbleTime_ = data.readUnsignedByte();
          this.recipient_ = data.readUTF();
          this.text_ = data.readUTF();
+         this.guild_ = data.readUTF();
       }
       
       override public function toString() : String
       {
-         return formatToString("TEXT","name_","objectId_","numStars_","bubbleTime_","recipient_","text_");
+         return formatToString("TEXT","name_","objectId_","numStars_","bubbleTime_","recipient_","text_","guild_");
       }
    }
 }

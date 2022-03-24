@@ -987,7 +987,7 @@ namespace RotMG.Networking
             }
         }
 
-        public static byte[] Text(string name, int objectId, int numStars, int bubbleTime, string recipient, string text)
+        public static byte[] Text(string name, int objectId, int numStars, int bubbleTime, string recipient, string text, string guildName)
         {
             using (var wtr = new PacketWriter(new MemoryStream()))
             {
@@ -998,6 +998,7 @@ namespace RotMG.Networking
                 wtr.Write((byte)bubbleTime);
                 wtr.Write(recipient);
                 wtr.Write(text);
+                wtr.Write(guildName);
                 return (wtr.BaseStream as MemoryStream).ToArray();
             }
         }
