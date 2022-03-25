@@ -1,8 +1,7 @@
 # edu-source
-Skilly's Educational source, upgraded by Schmutz. Using it to educate myself and become a full pserver dev lol <br/>
-I've never coded for pservers before, except making dungeons. I do simple tasks first and will slowly move to harder ones.
+Skilly's Educational source++.
 
-Features I've implemented so far:
+Features implemented so far:
 - [x] Make Guild Name show up in chat before player name
 - [x] Add Evasion for Players
 - [ ] Add Evasion for Enemies
