@@ -146,6 +146,7 @@ namespace RotMG.Common
             data.Add(new XElement("Dexterity", Stats[5]));
             data.Add(new XElement("HpRegen", Stats[6]));
             data.Add(new XElement("MpRegen", Stats[7]));
+            data.Add(new XElement("Evasion"), Stats[8]);
             data.Add(new XElement("Tex1", Tex1));
             data.Add(new XElement("Tex2", Tex2));
             data.Add(new XElement("Texture", SkinType));
@@ -173,6 +174,7 @@ namespace RotMG.Common
                 data.Add(new XElement("Dexterity", Stats[5]));
                 data.Add(new XElement("HpRegen", Stats[6]));
                 data.Add(new XElement("MpRegen", Stats[7]));
+                data.Add(new XElement("Evasion", Stats[8]));
                 data.Add(new XElement("Tex1", Tex1));
                 data.Add(new XElement("Tex2", Tex2));
                 data.Add(new XElement("Texture", SkinType));

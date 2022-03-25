@@ -18,6 +18,7 @@
 		<Dexterity max="75">15</Dexterity>
 		<HpRegen max="40">15</HpRegen>
 		<MpRegen max="50">10</MpRegen>
+		<Evasion max="30">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="0" max="2">Attack</LevelIncrease>
@@ -26,6 +27,7 @@
 		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0307" id="Archer">
 		<Class>Player</Class>
@@ -45,6 +47,7 @@
 		<Dexterity max="50">12</Dexterity>
 		<HpRegen max="40">12</HpRegen>
 		<MpRegen max="50">10</MpRegen>
+		<Evasion max="25">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -53,6 +56,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x030e" id="Wizard">
 		<Class>Player</Class>
@@ -72,6 +76,7 @@
 		<Dexterity max="75">15</Dexterity>
 		<HpRegen max="40">12</HpRegen>
 		<MpRegen max="60">12</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -80,6 +85,7 @@
 		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0310" id="Priest">
 		<Class>Player</Class>
@@ -99,6 +105,7 @@
 		<Dexterity max="50">12</Dexterity>
 		<HpRegen max="40">10</HpRegen>
 		<MpRegen max="75">15</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="0" max="2">Attack</LevelIncrease>
@@ -107,6 +114,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x031d" id="Warrior">
 		<Class>Player</Class>
@@ -126,6 +134,7 @@
 		<Dexterity max="50">10</Dexterity>
 		<HpRegen max="75">10</HpRegen>
 		<MpRegen max="50">10</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -134,6 +143,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="1" max="2">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x031e" id="Knight">
 		<Class>Player</Class>
@@ -153,6 +163,7 @@
 		<Dexterity max="50">10</Dexterity>
 		<HpRegen max="75">10</HpRegen>
 		<MpRegen max="50">10</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -161,6 +172,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="1" max="2">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x031f" id="Paladin">
 		<Class>Player</Class>
@@ -180,6 +192,7 @@
 		<Dexterity max="50">10</Dexterity>
 		<HpRegen max="40">10</HpRegen>
 		<MpRegen max="75">10</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -188,6 +201,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0320" id="Assassin">
 		<Class>Player</Class>
@@ -207,6 +221,7 @@
 		<Dexterity max="75">15</Dexterity>
 		<HpRegen max="40">15</HpRegen>
 		<MpRegen max="60">10</MpRegen>
+		<Evasion max="30">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="0" max="2">Attack</LevelIncrease>
@@ -215,6 +230,7 @@
 		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0321" id="Necromancer">
 		<Class>Player</Class>
@@ -234,6 +250,7 @@
 		<Dexterity max="60">15</Dexterity>
 		<HpRegen max="30">10</HpRegen>
 		<MpRegen max="75">12</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -242,6 +259,7 @@
 		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0322" id="Huntress">
 		<Class>Player</Class>
@@ -261,6 +279,7 @@
 		<Dexterity max="50">12</Dexterity>
 		<HpRegen max="40">12</HpRegen>
 		<MpRegen max="50">10</MpRegen>
+		<Evasion max="25">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -269,6 +288,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0323" id="Mystic">
 		<Class>Player</Class>
@@ -288,6 +308,7 @@
 		<Dexterity max="50">10</Dexterity>
 		<HpRegen max="40">15</HpRegen>
 		<MpRegen max="75">15</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -296,6 +317,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0324" id="Trickster">
 		<Class>Player</Class>
@@ -315,6 +337,7 @@
 		<Dexterity max="75">15</Dexterity>
 		<HpRegen max="40">12</HpRegen>
 		<MpRegen max="60">12</MpRegen>
+		<Evasion max="30">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -323,6 +346,7 @@
 		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="0" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 	<Object type="0x0325" id="Sorcerer">
 		<Class>Player</Class>
@@ -342,6 +366,7 @@
 		<Dexterity max="60">12</Dexterity>
 		<HpRegen max="75">10</HpRegen>
 		<MpRegen max="60">15</MpRegen>
+		<Evasion max="20">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -350,6 +375,7 @@
 		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="1" max="2">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
     <Object type="0x0326" id="Ninja">
 		<Class>Player</Class>
@@ -370,6 +396,7 @@
 		<Dexterity max="70">12</Dexterity>
 		<HpRegen max="40">10</HpRegen>
 		<MpRegen max="70">12</MpRegen>
+		<Evasion max="30">0</Evasion>
 		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
 		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
 		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
@@ -378,5 +405,6 @@
 		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
 		<LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
 		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<LevelIncrease min="0" max="0">Evasion</LevelIncrease>
 	</Object>
 </Objects>

@@ -258,7 +258,8 @@ namespace RotMG.Game.Entities
                         }
 
                         var message = string.Join(' ', j, 1, j.Length - 1);
-                        var tell = GameServer.Text(Name, Id, NumStars, 5, recipient.Name, message, string.IsNullOrEmpty(Client.Account.GuildName) ? "" : Client.Account.GuildName);
+                        var nameOfGuild = string.IsNullOrEmpty(Client.Account.GuildName) ? "" : Client.Account.GuildName;
+                        var tell = GameServer.Text(Name, Id, NumStars, 5, recipient.Name, message, nameOfGuild);
                         recipient.Client.Send(tell);
                         Client.Send(tell);
                         break;
@@ -481,8 +482,14 @@ namespace RotMG.Game.Entities
                     case "/max":
                         if (Client.Account.Ranked)
                         {
-                            for (var i = 0; i < Stats.Length; i++)
+                            for (var i = 0; i < Stats.Length; i++) {
+                                if ((Desc as PlayerDesc).Stats[i].Type == "Evasion")
+                                {
+                                    continue;
+                                }
+
                                 Stats[i] = (Desc as PlayerDesc).Stats[i].MaxValue;
+                            }
                             UpdateStats();
                             SendInfo("Maxed");
                         }
@@ -642,6 +649,9 @@ namespace RotMG.Game.Entities
                             SendHelp($"{bonus.Name}: +{bonus.Fame}");
                         SendInfo($"Base Fame: {fameStats.BaseFame}");
                         SendInfo($"Total Fame: {fameStats.TotalFame}");
+                        break;
+                    case "/evasion":
+                        SendInfo($"Your evasion chance is {Stats[8]}%");
                         break;
                     default:
                         SendError("Unknown command");

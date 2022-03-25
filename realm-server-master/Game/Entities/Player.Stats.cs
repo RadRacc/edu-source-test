@@ -160,6 +160,12 @@ namespace RotMG.Game.Entities
             return Client.Account.Stats.Fame;
         }
 
+        public void UpdateEvasionStat()
+        {
+            int evasion = (int)Math.Floor(GetStat(4) / 5f);
+            Stats[8] = evasion;
+        }
+
         public void SetPrivateSV(StatType type, object value)
         {
             PrivateSVs[type] = value;
@@ -183,6 +189,9 @@ namespace RotMG.Game.Entities
             SetPrivateSV(StatType.VitalityBoost, Boosts[6]);
             SetPrivateSV(StatType.Wisdom, Stats[7] + Boosts[7]);
             SetPrivateSV(StatType.WisdomBoost, Boosts[7]);
+            
+            UpdateEvasionStat();
+            SetPrivateSV(StatType.Evasion, Stats[8]);
         }
     }
 }

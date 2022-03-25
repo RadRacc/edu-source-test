@@ -378,6 +378,15 @@ namespace RotMG.Game.Entities
             if (HasConditionEffect(ConditionEffectIndex.Invulnerable))
                 damageWithDefense = 0;
 
+            //Evasion
+            var evasionChance = Stats[8] / 100f;
+            Random rand = new Random();
+            if (rand.NextDouble() < evasionChance) {
+                damageWithDefense = 0;
+                var notif = GameServer.Notification(Id, "Evaded!", 0x0000FF);
+                this.Client.Send(notif);
+            }
+
             Hp -= damageWithDefense;
             FameStats.DamageTaken += damageWithDefense;
             if (Hp <= 0)

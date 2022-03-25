@@ -101,7 +101,8 @@ namespace RotMG.Game
         ItemData17,
         ItemData18,
         ItemData19,
-        OwnerAccountId
+        OwnerAccountId,
+        Evasion
     }
 
     public class Entity : IDisposable

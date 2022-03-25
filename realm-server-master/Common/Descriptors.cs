@@ -225,6 +225,7 @@ namespace RotMG.Common
 
         public readonly int MaxHp;
         public readonly int Defense;
+        public readonly int Evasion;
 
         public readonly string DungeonName;
 
@@ -268,6 +269,7 @@ namespace RotMG.Common
 
             MaxHp = e.ParseInt("MaxHitPoints");
             Defense = e.ParseInt("Defense");
+            Evasion = e.ParseInt("Evasion");
 
             DungeonName = e.ParseString("DungeonName");
 
@@ -325,7 +327,7 @@ namespace RotMG.Common
             for (var k = 0; k < 20; k++)
                 ItemDatas[k] = -1;
 
-            Stats = new StatDesc[8];
+            Stats = new StatDesc[9];
             for (var i = 0; i < Stats.Length; i++)
                 Stats[i] = new StatDesc(i, e);
             Stats = Stats.OrderBy(k => k.Index).ToArray();
@@ -374,6 +376,7 @@ namespace RotMG.Common
                 case 5: return "Dexterity";
                 case 6: return "HpRegen";
                 case 7: return "MpRegen";
+                case 8: return "Evasion";
             }
             return null;
         }
@@ -390,6 +393,7 @@ namespace RotMG.Common
                 case "Dexterity": return 5;
                 case "HpRegen": return 6;
                 case "MpRegen": return 7;
+                case "Evasion": return 8;
             }
             return -1;
         }
