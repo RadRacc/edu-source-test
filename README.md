@@ -1,5 +1,5 @@
 # edu-source
-Skilly's Educational source, upgraded by Schmutz. Using it to educate myself and become a full pserver dev lol
+Skilly's Educational source, upgraded by Schmutz. Using it to educate myself and become a full pserver dev lol <br/>
 I've never coded for pservers before, except making dungeons. I do simple tasks first and will slowly move to harder ones.
 
 Features I've implemented so far:
