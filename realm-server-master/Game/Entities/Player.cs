@@ -380,8 +380,7 @@ namespace RotMG.Game.Entities
 
             //Evasion
             var evasionChance = Stats[8] / 100f;
-            Random rand = new Random();
-            if (rand.NextDouble() < evasionChance) {
+            if (MathUtils.Chance((float)evasionChance)) {
                 damageWithDefense = 0;
                 var notif = GameServer.Notification(Id, "Evaded!", 0x0000FF);
                 this.Client.Send(notif);

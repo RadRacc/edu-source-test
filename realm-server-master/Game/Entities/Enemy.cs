@@ -12,6 +12,7 @@ namespace RotMG.Game.Entities
     {
         public Dictionary<Player, int> DamageStorage;
         public Terrain Terrain;
+        public const float BaseEnemyEvasionChance = 0.05f;
 
         public Enemy(ushort type) : base(type)
         {
@@ -115,6 +116,15 @@ namespace RotMG.Game.Entities
 
             if (HasConditionEffect(ConditionEffectIndex.Invulnerable))
                 damageWithDefense = 0;
+
+            //Evasion, base chance is 5%, for every 2 evasion above 10 player has, chance is increased by +1%
+            var evasionChance = Math.Max(0, Math.Floor((hitter.Stats[8] - 10) / 2f)) / 100 + BaseEnemyEvasionChance;
+            if (MathUtils.Chance((float)evasionChance))
+            { 
+                damageWithDefense = 0;
+                var notif = GameServer.Notification(Id, "Evaded!", 0x0000FF);
+                hitter.Client.Send(notif);
+            }
 
             Hp -= damageWithDefense;
 
