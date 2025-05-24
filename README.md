@@ -1,6 +1,3 @@
-# Project-Nova
-Official Repository of Project Nova, a RotMG Private Server made by RadRacc and MaYo.
-
 # Work from Gummy
 Features implemented so far:
 - [x] Make Guild Name show up in chat before player name
